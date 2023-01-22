@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(34, 34, 34);
+    height: 4em;
+    position: fixed;
+    z-index: 1;
+}
+
+.top{
+    padding-top: 1.3em;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr .1fr 1fr ; 
+}
+
+.top a{
+    color: white;
+    text-decoration: none;
+    padding-right: 0em;
+}
+
+.sear{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sear input{
+    text-indent: 10px;
+    outline: none;
+    border: opx solid;
+    border-radius: 30px;
+}
+
+
+.sear button{
+    width: 4em;
+    border-top-right-radius:  30px;
+    border-bottom-right-radius:  30px;
+    border: 0px solid;
+    margin-left: -1em;
+}
+
+
+
+.main{
+    /* background-color: rgb(160, 160, 255); */
+    padding-top: 5em;
+    background-image: linear-gradient(rgb(160, 160, 255),red, rgb(160, 160, 255));
+    height: 35em;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        margin-left: 10%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: show 1.2s ;
+}
+
+.main-details{
+    border: 1px solid;
+    padding-top: 2em;
+}
+
+.ima{
+    border: 0px solid ;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 8px;
+    width: 12em;
+    height: 14em;
+    margin-left: 5em;
+    margin-top: 1em;
+    backdrop-filter: blur(20px);
+    padding: .5em;
+}
+
+.in-ima{
+    border: 0px solid;
+    height: 80%;
+    border-radius: 8px;
+    background-image: url(ima/6..jpg);
+}
+
+.ima a{
+    text-decoration: none;
+    color: white;
+}
